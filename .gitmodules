@@ -1,0 +1,21 @@
+[submodule "modules/ejabberd"]
+	path = modules/ejabberd
+	url = https://github.com/duritong/puppet-ejabberd.git
+[submodule "modules/git"]
+	path = modules/git
+	url = https://github.com/camptocamp/puppet-git.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/apt"]
+	path = modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "modules/nodejs"]
+	path = modules/nodejs
+	url = https://github.com/puppetlabs/puppetlabs-nodejs.git
+[submodule "modules/dns"]
+	path = modules/dns
+	url = git://github.com/ajjahn/puppet-dns.git
+[submodule "modules/concat"]
+	path = modules/concat
+	url = https://github.com/ripienaar/puppet-concat.git
