@@ -5,6 +5,9 @@ The configuration to setup the softwarewolves server on a debian like system.
 
 This project relies on several existing git modules available on github, who are added as git submodules.
 
+To clone, use:
+git clone --recursive https://github.com/supernelis/softwarewolves-puppet-server.git
+
 Usage:
 1. Make a node configuration for your node in the manifest/nodes.pp file
 
