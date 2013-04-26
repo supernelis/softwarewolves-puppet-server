@@ -16,6 +16,3 @@
 [submodule "modules/concat"]
 	path = modules/concat
 	url = https://github.com/ripienaar/puppet-concat.git
-[submodule "modules/ejabberd"]
-	path = modules/ejabberd
-	url = https://github.com/supernelis/puppet-ejabberd.git
