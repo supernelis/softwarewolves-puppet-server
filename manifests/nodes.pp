@@ -49,7 +49,9 @@ node 'raspberrypi' {
 }
 
 node 'awtest1.vm.bytemark.co.uk' {
-	include 'ejabberd'
+	class{'ejabberd':
+		domains => "vm1.archiwise.com",
+	}
 
 	file { '/etc/sww/':
 		ensure => directory,
