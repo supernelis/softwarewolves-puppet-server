@@ -50,7 +50,7 @@ node 'raspberrypi' {
 
 node 'awtest1.vm.bytemark.co.uk' {
 	class{'ejabberd':
-		domains => "vm1.archiwise.com",
+		domains => ["vm1.archiwise.com", "softwarewolves.org","awtest1.vm.bytemark.co.uk"],
 	}
 
 	file { '/etc/sww/':
