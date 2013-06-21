@@ -4,7 +4,7 @@ node 'raspberrypi' {
 	$serverdomain = "software.wolf"
 		
 	class{'ejabberd':
-		domains => "pi.${serverdomain}",
+		domains => '"pi.${serverdomain}"',
 	}
 
 	class {'softwarewolves':
@@ -50,7 +50,8 @@ node 'raspberrypi' {
 
 node 'awtest1.vm.bytemark.co.uk' {
 	class{'ejabberd':
-		domains => ["vm1.archiwise.com", "softwarewolves.org","awtest1.vm.bytemark.co.uk"],
+#		domains => ['"vm1.archiwise.com","softwarewolves.org","awtest1.vm.bytemark.co.uk"'],
+		domains => '"awtest1.vm.bytemark.co.uk","vm1.archiwise.com","softwarewolves.org"',
 	}
 
 	file { '/etc/sww/':
