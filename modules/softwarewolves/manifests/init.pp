@@ -13,6 +13,10 @@ class softwarewolves(
 		ensure => installed,
 	}
 	
+	package {'libexpat1-dev':
+		ensure => installed,
+	}
+	
 	Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 	
 	git::clone { 'softwarewolves':
@@ -42,6 +46,6 @@ class softwarewolves(
 	nodejs::npm{ "${install_dir}/softwarewolves/app/:softwarewolves":
 		ensure => present,
 		source => "${install_dir}/softwarewolves/app/",
-		require => [Git::Clone['softwarewolves'], Package['nodejs']],
+		require => [Git::Clone['softwarewolves'], Package['nodejs'], Package['libexpat1-dev'],Package['libicu-dev']],
 	}
 }
