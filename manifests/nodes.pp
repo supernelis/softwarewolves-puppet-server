@@ -60,7 +60,7 @@ node 'awtest1.vm.bytemark.co.uk' {
 
 	class {'softwarewolves':
 		install_dir => '/etc/sww/',
-		example_js => 'awtest1_example.js',
+		example_js => 'softwaresolves.org.js',
 		require => File['/etc/sww/'],
 	}
 
